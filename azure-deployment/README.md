@@ -1,25 +1,25 @@
-# Azure Deployment Module
+# Azure Deployment Samples
 
-Learn how to package your prompt and RAG services for Azure, automate resource provisioning, and integrate CI/CD.
+Use these assets to deploy the onboarding RAG demo behind an Azure Function.
 
-## Contents
-- Bicep or ARM templates for infrastructure-as-code
-- GitHub Actions or Azure DevOps pipelines for automated deployment
-- Azure Function or App Service hosting samples
+## Files
 
-## Setup
+- `function_app/__init__.py` — HTTP-triggered Azure Function that calls the shared prompt bridge helper.
+- `function_app/function.json` — binding configuration for the HTTP trigger.
+- `function_app/prompt_bridge.py` — helper that packages model responses into JSON for clients.
+- `host.json` — basic host configuration for local testing.
+- `local.settings.json` — sample local configuration values.
+- `requirements.txt` — Python packages needed by the Function App runtime.
+
+## Quickstart
+
 ```bash
-az login
-az account set --subscription <subscription-id>
+func start
 ```
 
-Provision resources defined in the module:
-```bash
-az deployment group create \
-  --resource-group <resource-group> \
-  --template-file infra/main.bicep \
-  --parameters @infra/parameters.json
-```
+Before running, set the environment variable `OPENAI_DEPLOYMENT` to the name of your Azure OpenAI deployment. The included samples return mock data so you can validate plumbing without real credentials.
 
-## Next Steps
-Deploy your APIs, then hand off the endpoints to the [frontend module](../frontend/README.md) for integration.
+## Deployment Notes
+
+- Use the `frontend-template` React app as a companion client when demoing the serverless endpoint.
+- Update `local.settings.json` with your storage and API keys when you are ready to connect to Azure resources.

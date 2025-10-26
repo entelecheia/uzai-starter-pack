@@ -1,24 +1,19 @@
-# Prompt Engineering Module
+# Prompt Engineering Playbook
 
-This module explores structured prompt design patterns, evaluation workflows, and responsible AI guardrails for Azure OpenAI.
+This module contains the exercises and reference material used to introduce new teammates to iterative prompt design.
 
-## Contents
-- Prompt templates and prompt flow definitions
-- Evaluation notebooks for iterative refinement
-- Guardrail samples (content filters, safety heuristics)
+## Files
 
-## Setup
-```bash
-pip install -r requirements.txt
-jupyter lab
-```
+- `chatbot_prompt_tuning.ipynb` — end-to-end walkthrough of designing customer-support prompts and logging evaluation metrics.
+- `prompts/example_prompts.json` — seed prompts for the notebook walkthrough.
+- `templates/system_message_template.md` — optional template for drafting system messages.
 
-Set the following variables before running notebooks:
-```bash
-export OPENAI_API_KEY="sk-your-openai-key"
-export AZURE_OPENAI_ENDPOINT="https://<your-resource-name>.openai.azure.com/"
-export AZURE_OPENAI_KEY="your-azure-openai-key"
-```
+## Getting Started
+
+1. Open the notebook in JupyterLab or VS Code.
+2. Install the dependencies listed in the root `requirements.txt` or use an environment that already has `openai`, `python-dotenv`, and `ipykernel`.
+3. Adjust the prompt JSON to reflect your product voice and run the evaluation cells.
 
 ## Next Steps
-Proceed to the [RAG module](../rag/README.md) to combine your prompts with domain-specific data.
+
+Continue with the RAG implementation sample to connect tuned prompts to grounded knowledge sources.
