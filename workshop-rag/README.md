@@ -2,6 +2,8 @@
 
 This directory contains a complete RAG (Retrieval-Augmented Generation) application following the workshop guide exactly. It uses Azure Functions with OpenAI bindings for simplified RAG orchestration.
 
+> **For Workshop Participants**: If you're following the workshop, please start with the **[Workshop Guide](../WORKSHOP_GUIDE.md)** for step-by-step instructions. This README provides technical details for developers.
+
 ## 🏗️ Architecture
 
 This implementation uses the latest Azure Functions OpenAI bindings to create a powerful RAG pipeline with minimal code:
