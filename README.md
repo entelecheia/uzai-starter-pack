@@ -23,7 +23,7 @@ Follow these steps to clone the repository, install dependencies, and configure 
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/<your-org>/uzai-starter-pack.git
+   git clone https://github.com/entelecheia/uzai-starter-pack.git
    cd uzai-starter-pack
    ```
 
