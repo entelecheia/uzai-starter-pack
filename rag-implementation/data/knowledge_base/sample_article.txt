@@ -1,0 +1,1 @@
+Acme Analytics Platform simplifies KPI monitoring with automated executive summaries and drill-down dashboards.

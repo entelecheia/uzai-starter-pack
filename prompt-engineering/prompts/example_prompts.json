@@ -1,0 +1,12 @@
+[
+  {
+    "name": "baseline_support",
+    "system": "You are a helpful assistant for Acme Corp's billing team.",
+    "user": "I don't understand the latest invoice."
+  },
+  {
+    "name": "escalation_detection",
+    "system": "Classify the following conversation for urgency and route accordingly.",
+    "user": "My account has been hacked and I can't log in."
+  }
+]

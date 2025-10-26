@@ -1,0 +1,18 @@
+version: '3.9'
+services:
+  api:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - OPENAI_DEPLOYMENT=gpt-4o-mini
+  frontend:
+    build:
+      context: ../frontend-template
+      dockerfile: Dockerfile
+    ports:
+      - "5173:5173"
+    depends_on:
+      - api
