@@ -1,0 +1,109 @@
+name: Help Request
+description: Request help with setup, configuration, or usage
+title: "[Help]: "
+labels: ["help", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reaching out for help! Please provide as much detail as possible about what you're trying to accomplish and where you're getting stuck.
+
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+
+  - type: dropdown
+    id: module
+    attributes:
+      label: Which module are you working with?
+      options:
+        - workshop-rag
+        - fullstack-example
+        - prompt-engineering
+        - rag-implementation
+        - azure-deployment
+        - frontend
+        - General setup
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: What type of help do you need?
+      options:
+        - Setup/Installation
+        - Configuration
+        - Azure Resources
+        - Code/Implementation
+        - Deployment
+        - Troubleshooting
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-trying
+    attributes:
+      label: What are you trying to accomplish?
+      description: Describe what you're trying to do or achieve
+      placeholder: I'm trying to...
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened when you tried?
+      description: Describe what happened, including any error messages
+      placeholder: When I tried to do X, I got error Y...
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps-taken
+    attributes:
+      label: What steps have you already taken?
+      description: List the steps you've already tried to resolve this
+      placeholder: |
+        1. I tried X
+        2. I checked Y
+        3. I looked at Z
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Your environment
+      description: Please provide details about your environment
+      placeholder: |
+        - OS: Windows/Mac/Linux
+        - Python version: 3.x.x
+        - Node.js version: x.x.x
+        - Azure subscription: Yes/No
+        - Any other relevant details
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any relevant log output or error messages
+      render: shell
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this help request, you agree to follow our [Code of Conduct](https://github.com/entelecheia/uzai-starter-pack/blob/main/CODE_OF_CONDUCT.md)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true

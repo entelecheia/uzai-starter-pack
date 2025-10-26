@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure AI RAG Chatbot Workshop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 Azure AI RAG Chatbot</h1>
+            <p>Ask questions about your documents using Retrieval-Augmented Generation</p>
+        </header>
+
+        <div class="chat-container">
+            <div id="chat-messages" class="chat-messages">
+                <div class="message bot-message">
+                    <div class="message-content">
+                        <strong>Assistant:</strong> Hello! I'm your RAG-powered assistant. I can answer questions based on the documents you've uploaded to Azure AI Search. What would you like to know?
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-input-container">
+                <form id="chat-form" class="chat-form">
+                    <div class="input-group">
+                        <textarea 
+                            id="message-input" 
+                            placeholder="Ask a question about your documents..." 
+                            rows="3"
+                            required
+                        ></textarea>
+                        <button type="submit" id="send-button" class="send-button">
+                            <span class="button-text">Send</span>
+                            <span class="loading-spinner" style="display: none;">⏳</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="info-panel">
+            <h3>💡 Try asking:</h3>
+            <ul>
+                <li>"What is RAG?"</li>
+                <li>"How does Azure AI Search work?"</li>
+                <li>"What are the benefits of using Azure Functions?"</li>
+                <li>"Explain the architecture of this application"</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

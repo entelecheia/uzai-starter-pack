@@ -1,0 +1,12 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet-isolated",
+    "AZURE_OPENAI_CONNECTION_STRING": "endpoint=https://your-openai-resource.openai.azure.com/;key=your-openai-key;api-version=2024-02-15-preview",
+    "AZURE_AI_SEARCH_CONNECTION_STRING": "endpoint=https://your-search-resource.search.windows.net;key=your-search-key;api-version=2024-02-01"
+  },
+  "Host": {
+    "CORS": "*"
+  }
+}
