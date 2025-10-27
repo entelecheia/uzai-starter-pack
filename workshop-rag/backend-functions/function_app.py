@@ -1,6 +1,7 @@
 import azure.functions as func
 import json
 import logging
+from datetime import datetime
 from azure.functions import HttpRequest, HttpResponse
 from azure.functions_openai import SemanticSearchInput, TextCompletionInput
 
@@ -52,7 +53,7 @@ def chat_function(req: HttpRequest, search_context: str, completion: str) -> Htt
             "query": query,
             "response": completion,
             "context_used": search_context,
-            "timestamp": func.datetime.datetime.utcnow().isoformat() + "Z"
+            "timestamp": datetime.utcnow().isoformat() + "Z"
         }
         
         return func.HttpResponse(
