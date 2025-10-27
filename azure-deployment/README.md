@@ -46,7 +46,7 @@ This module works alongside the [Workshop RAG](../workshop-rag/) implementation 
    func start
    ```
 
-The function will be available at `http://localhost:7071/api/prompt_bridge`.
+The function will be available at `http://localhost:7071/api/rag`.
 
 ## 🔧 Configuration
 
