@@ -17,7 +17,7 @@ This repository contains everything you need to build intelligent "Chat with you
 
 ## 🛠️ The Tech Stack
 
-[![Static Web Apps](https://img.shields.io/badge/Static_Web_Apps-0078D7?style=for-the-badge&logo=azure-static-web-apps&logoColor=white)](https://azure.microsoft.com/en-us/products/static-web-apps)
+[![Static Web Apps](https://img.shields.io/badge/Static_Web_Apps-0078D7?style=for-the-badge&logo=azure-static-web-apps&logoColor=white)](https://azure.microsoft.com/en-us/products/app-service/static)
 [![Azure AI Search](https://img.shields.io/badge/Azure_AI_Search-0078D7?style=for-the-badge&logo=azure-search&logoColor=white)](https://azure.microsoft.com/en-us/products/ai-services/cognitive-search)
 [![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)](https://code.visualstudio.com/)
 

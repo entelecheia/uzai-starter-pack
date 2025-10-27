@@ -17,7 +17,7 @@ This is the core architecture for thousands of modern AI applications, and you'l
 
 This project uses a modern, serverless "fullstack" architecture on Azure. The badges below represent the core technologies we'll use and link to their documentation.
 
-[![Static Web Apps](https://img.shields.io/badge/Static_Web_Apps-0078D7?style=for-the-badge&logo=azure-static-web-apps&logoColor=white)](https://azure.microsoft.com/en-us/products/static-web-apps)
+[![Static Web Apps](https://img.shields.io/badge/Static_Web_Apps-0078D7?style=for-the-badge&logo=azure-static-web-apps&logoColor=white)](https://azure.microsoft.com/en-us/products/app-service/static)
 [![Azure AI Search](https://img.shields.io/badge/Azure_AI_Search-0078D7?style=for-the-badge&logo=azure-search&logoColor=white)](https://azure.microsoft.com/en-us/products/ai-services/cognitive-search)
 [![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)](https://code.visualstudio.com/)
 
